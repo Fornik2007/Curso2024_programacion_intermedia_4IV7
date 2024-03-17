@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <div class="component">
-                <div class="userlogin">
-                    <label>Usuario:</label>
-                <input type="text" name="user" id="user">
-                </div>
-                    <label>Password:</label>
-                <input type="password" name="user" id="user">
-                <div class="buttons">
-                    <button><img src="">Facebook</button>
-                    <button><img src="">Google</button>
-                </div>
+        <br>
+        <br>
+        <center><img src="./img/usuario_morado.png" alt="logo_del_usuario" height="150 px" width="150 px" ></center>
+        <h1>INICIA SESIÓN</h1>
+
+       <div class="component">
+            <div class="userlogin">
+                <label>Usuario:</label>
+                <input type="text" name="user" id="user" placeholder="Ingresa Usuario">
+
+                <label>Password:</label>
+                <input type="password" name="user" id="user" placeholder="Ingresa Contraseña">
+
+                <input type="submit" value="iniciar sesión"> 
+            </div>
+            <br>
+            <div class="buttons">
+                <p>Otros metodos: </p>
+                <a href="https://www.facebook.com/"><button><img src="./img/logo_facebook.png" width="30 px"></button></a>
+                <a href="https://www.google.com/"><button><img src="./img/google_logo.png"  width="30 px"></button></a>
+            </div>
+            <div class="extras">
+                <a href="#">¿Olvidaste tu contraseña?</a><br>
+                <a href="#">¿No tiene cuenta? Cree una</a>
             </div>
         </div>
     </div>
+    
 </body>
 </html>

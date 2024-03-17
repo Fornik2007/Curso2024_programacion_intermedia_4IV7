@@ -4,45 +4,97 @@
 }
 
 body{
-    background-image: url();
+    background-image: url(../img/rougethebat.jpg);
     background-size: cover;
-    color: rgb(41, 238, 178);
     display: flex;
     align-items: center;
     flex-direction: column;
     align-content: center;
+    height: 100vh;
 }
 
 .userlogin {
-    background-color: #cd0a0a;
+    background-color: #fc4fd1af;
     width: 600px;
-    height: 50px;
+    height: 225px;
     text-align: center;
-    border-radius: 15px solid rgb(156, 234, 16);
-    margin-top: 10%;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding: 10px 30px;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.title {
-    font-size: 28px;
-    font-style: italic;
-    color: blue;
+.container {
+    font-size: 20px;
     float: left;
-}
-
-,passwordlogin {
-    background-color: rgb(255, 255, 255);
-    width: 600px;
-    height: 50px;
     text-align: center;
-    border-radius: 15px solid rgb(156, 234, 16);
-    margin-top: 10%;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.usuario{
+.buttons{
+    background-color: #fc4fd1af;
     margin-right: 5px;
     padding-left: 5px;
-    height: 25px;
-    width: 300px;
-    border: solid 2px #09c222;
-    border-radius: 10px;
+    height: 65px;
+    width: 600px;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buttons button{
+    background: transparent;
+}
+
+.userlogin label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.userlogin input {
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+.userlogin input[type="text"],
+.userlogin input[type="password"]{
+    border: none;
+    background: #b040f1af;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+}
+
+.userlogin input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: #bf2ae4;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.extras a{
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 20px;
+    color: #bf2ae4;
+}
+
+.extras a:hover{
+    color: #4c00ff;
 }
