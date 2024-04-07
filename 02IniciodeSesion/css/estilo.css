@@ -78,6 +78,10 @@ body{
     outline: none;
 }
 
+::placeholder{
+    color: azure;
+}
+
 .userlogin input[type="submit"]{
     border: none;
     outline: none;
@@ -86,6 +90,11 @@ body{
     color: #ffffff;
     font-size: 20px;
     border-radius: 20px;
+}
+
+.extras{
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .extras a{

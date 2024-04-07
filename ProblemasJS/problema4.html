@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <script src="./JS/problemas.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn btn-1" href="./inicio.html">Volver</a>
+            <nav>
+                <ul>
+                    <li><a class="btn btn-2" href="./problema1.html">problema 1</a></li>
+                    <li><a class="btn btn-2" href="./problema2.html">problema 2</a></li>
+                    <li><a class="btn btn-2" href="./problema3.html">problema 3</a></li>
+                    <li><a class="btn btn-2" href="./problema5.html">problema 5</a></li>
+                    <li><a class="btn btn-2" href="./problema6.html">problema 6</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Calificación de Algoritmia</h1>
+            <p>Calcule su calificación final de la materia de Algoritmia, ingrese sus respectivas calificaciones. <br>
+                Dicha calificación se compone de los siguientes porcentajes: <br>
+                    55% del promedio de sus tres calificaciones parciales. <br>
+                    30% de la calificación del examen final. <br>
+                    15% de la calificación de un trabajo final.
+            </p>
+        </section>
+        <main>
+            <div class="calculadora">
+                <label for="calificacion1">Calificacion de 1er periodo: </label>
+                <input type="number" name="calificacion1" id="calificacion1" placeholder="Ingrese calificación" min="0" max="10">
+                <br>
+                <label for="calificacion2">Calificacion de 2do periodo:</label>
+                <input type="number" name="calificacion2" id="calificacion2" placeholder="Ingrese calificación" min="0" max="10">
+                <br>
+                <label for="calificacion3">Calificacion de 3er periodo: </label>
+                <input type="number" name="calificacion3" id="calificacion3" placeholder="Ingrese calificación" min="0" max="10">
+                <br>
+                <label for="calificacionExamen">Calificacion del examen final:</label>
+                <input type="number" name="calificacionExamen" id="calificacionExamen" placeholder="Ingrese calificación" min="0" max="10">
+                <br>
+                <label for="calificacionTrabajo">Calificacion del trabajo final: </label>
+                <input type="number" name="calificacionTrabajo" id="calificacionTrabajo" placeholder="Ingrese calificación" min="0" max="10">
+                <br>
+                <button onclick="calcularCalificacionFinal()">Calcular calificacion Final</button>
+                <br>
+            </div>
+            <div class="resultado" id="resultado"></div>
+        </main>
+    </div>
+</body>
+</html>

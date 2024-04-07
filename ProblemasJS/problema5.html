@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 5</title>
+    <script src="./JS/problemas.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn btn-1" href="./inicio.html">Volver</a>
+            <nav>
+                <ul>
+                    <li><a class="btn btn-2" href="./problema1.html">problema 1</a></li>
+                    <li><a class="btn btn-2" href="./problema2.html">problema 2</a></li>
+                    <li><a class="btn btn-2" href="./problema3.html">problema 3</a></li>
+                    <li><a class="btn btn-2" href="./problema4.html">problema 4</a></li>
+                    <li><a class="btn btn-2" href="./problema6.html">problema 6</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Saber el porcentaje de hombres y mujeres</h1>
+            <p>ingrese el total de  cuantos hombres y cuantas mujeres tiene.</p>
+        </section>
+        <main>
+            <div class="calculadora">
+                <label for="hombres">Total de hombres: </label>
+                <input type="number" name="hombres" id="hombres" placeholder="ingrese total hombres">
+                <br>
+                <label for="mujeres">Total de mujeres: </label>
+                <input type="number" name="mujeres" id="mujeres" placeholder="ingrese total mujeres">
+                <br>
+                <button onclick="calcularPorcentaje()">Calcular porcentajes</button>
+                <br>
+            </div>
+            <div class="resultado" id="resultado"></div>
+        </main>
+    </div>  
+</body>
+</html>

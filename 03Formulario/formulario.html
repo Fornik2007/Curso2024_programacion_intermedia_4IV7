@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="./js/validacion.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+                <p>
+                    Todos los formularios en web, manejan metodos para el envio de las diferentes peticiones que realiza el usuario. 
+                    Debemos recordar que las mayorias de las aplicaciones en web trabajan sobre una arquitectura cliente servidor. 
+                    Significa que el cliente realiza una peticion (request) y el servidor debe de atender mediante una respuesta (responde).
+                    Los metodos mas comunes son:
+                </p>
+                    <h2>GET:</h2> 
+                    <h1>
+                        Este metodo se encarga de enviar la informacion del formulario por medio de la salida de URL estandar
+                        del navegador, este propicia que pueda existir inyecciones de codigo realizando violaciones a la seguridad del sistema
+                    </h1>
+                    <h2>POST:</h2> 
+                    <h1>
+                        Este metodo se encarga de enviar la informacion igual por el metodo estandar; pero mediante un ocultamiento,
+                        esto significa que no es visible para el usuario. Lo que nos ofrece un mayor grado de seguridad en el manejo del sistema.
+                    </h1>
+                <p>    
+                    Get solo se usa para operaciones de lectura.
+                    Post sirve para cambiar la informacion de un recurso por parte del servidor.
+                    (Inserta un registro)
+                    Delete sirve para eliminar un recurso en especifico.
+                    Put almacena la informacion de un recurso particular, para su actualizacion.
+                    Head regresa el codigo de respuesta y cualquier cabezera HTTP asociada.
+                </p>
+            <form method="get" name="formulario" onsubmit="return validar(this)" action="">    
+                <label>Nombre:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Ingrese su nombre">
+                <br>
+                <label>Edad:</label>
+                <br>
+                <input type="number" name="edad" id="edad" placeholder="Ingrese su edad">
+                <br>
+                <label>Correo:</label>
+                <br>
+                <input type="text" name="correo" id="correo" placeholder="ingrese su correo">
+                <br>
+                <input type="submit" name="enviar" value="Enviar Registro" id="enviar">
+                <br>
+                <input type="reset" name="borrar" value="Borrar Datos" id="borrar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+

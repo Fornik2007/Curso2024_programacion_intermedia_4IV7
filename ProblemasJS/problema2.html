@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema2</title>
+    <script src="./JS/problemas.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn btn-1" href="./inicio.html">Volver</a>
+            <nav>
+                <ul>
+                    <li><a class="btn btn-2" href="./problema1.html">problema 1</a></li>
+                    <li><a class="btn btn-2" href="./problema3.html">problema 3</a></li>
+                    <li><a class="btn btn-2" href="./problema4.html">problema 4</a></li>
+                    <li><a class="btn btn-2" href="./problema5.html">problema 5</a></li>
+                    <li><a class="btn btn-2" href="./problema6.html">problema 6</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Calculadora de sueldo + comisiones</h1>
+            <p>Calcule su sueldo que recibira en este mes, ingrese su sueldo y después el monto de cada venta que hizo. <br>recibira un 10% de cada venta</p>
+        </section>
+        <main>
+            <div class="calculadora">
+                <label for="sueldoBase">Sueldo: $</label>
+                <input type="number" name="sueldoBase" id="sueldoBase" placeholder="ingrese su sueldo">
+                <br>
+                <label for="venta1">Venta 1: $</label>
+                <input type="number" name="venta1" id="venta1" placeholder="ingrese el monto">
+                <br>
+                <label for="venta2">Venta 2: $</label>
+                <input type="number" name="venta2" id="venta2" placeholder="ingrese el monto">
+                <br>
+                <label for="venta3">Venta 3: $</label>
+                <input type="number" name="venta3" id="venta3" placeholder="ingrese el monto">
+                <br>
+                <button onclick="calcularSueldoFinal()">Calcular Sueldo Final</button>
+                <br>
+            </div>
+            <div class="resultado" id="resultado"></div>
+        </main>
+    </div>
+</body>
+</html>

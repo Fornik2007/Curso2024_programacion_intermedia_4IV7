@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6</title>
+    <script src="./JS/problemas.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn btn-1" href="./inicio.html">Volver</a>
+            <nav>
+                <ul>
+                    <li><a class="btn btn-2" href="./problema1.html">problema 1</a></li>
+                    <li><a class="btn btn-2" href="./problema2.html">problema 2</a></li>
+                    <li><a class="btn btn-2" href="./problema3.html">problema 3</a></li>
+                    <li><a class="btn btn-2" href="./problema4.html">problema 4</a></li>
+                    <li><a class="btn btn-2" href="./problema5.html">problema 5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Calculadora de Edad</h1>
+            <p>Calcule su edad actual, pasada o futura, ingrese su fecha de nacimiento y una fecha a comparar.</p>
+        </section>
+        <main>
+            <div class="calculadora">
+                <label for="fechaNacimiento">Fecha de nacimiento: </label>
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                <br>
+                <label for="fechaReferencia">Fecha de referencia: </label>
+                <input type="date" name="fechaReferencia" id="fechaReferencia">
+                <br>
+                <button onclick="calcularEdad()">Calcular Edad</button>
+                <br>
+            </div>
+            <div class="resultado" id="resultado"></div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problema 1</title>
+    <script src="./JS/problemas.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn btn-1" href="./inicio.html">Volver</a>
+            <nav>
+                <ul>
+                    <li><a class="btn btn-2" href="./problema2.html">problema 2</a></li>
+                    <li><a class="btn btn-2" href="./problema3.html">problema 3</a></li>
+                    <li><a class="btn btn-2" href="./problema4.html">problema 4</a></li>
+                    <li><a class="btn btn-2" href="./problema5.html">problema 5</a></li>
+                    <li><a class="btn btn-2" href="./problema6.html">problema 6</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>Inversión en un Banco</h1>
+            <p>Calcule cuanto ganara en un mes de iversión, ingrese su dinero a invertir, ganara un 2% al mes</p>
+        </section>
+        <main>
+            <div class="calculadora">
+                <label for="inversion">Inversión: $</label>
+                <input type="number" name="inversion" id="inversion" placeholder="ingrese su inversión">
+                <br>
+                <button onclick="calcularInversion()">Calcular ganancias</button>
+                <br>
+            </div>
+            <div class="resultado" id="resultado"></div>
+        </main>
+    </div>
+</body>
+</html>
