@@ -28,16 +28,16 @@
         <main>
             <div class="calculadora">
                 <label for="sueldoBase">Sueldo: $</label>
-                <input type="number" name="sueldoBase" id="sueldoBase" placeholder="ingrese su sueldo">
+                <input type="number" name="sueldoBase" id="sueldoBase" placeholder="ingrese su sueldo" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="venta1">Venta 1: $</label>
-                <input type="number" name="venta1" id="venta1" placeholder="ingrese el monto">
+                <input type="number" name="venta1" id="venta1" placeholder="ingrese el monto" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="venta2">Venta 2: $</label>
-                <input type="number" name="venta2" id="venta2" placeholder="ingrese el monto">
+                <input type="number" name="venta2" id="venta2" placeholder="ingrese el monto" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="venta3">Venta 3: $</label>
-                <input type="number" name="venta3" id="venta3" placeholder="ingrese el monto">
+                <input type="number" name="venta3" id="venta3" placeholder="ingrese el monto" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <button onclick="calcularSueldoFinal()">Calcular Sueldo Final</button>
                 <br>

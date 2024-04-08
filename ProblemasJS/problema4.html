@@ -33,19 +33,19 @@
         <main>
             <div class="calculadora">
                 <label for="calificacion1">Calificacion de 1er periodo: </label>
-                <input type="number" name="calificacion1" id="calificacion1" placeholder="Ingrese calificación" min="0" max="10">
+                <input type="number" name="calificacion1" id="calificacion1" placeholder="Ingrese calificación" min="0" max="10" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="calificacion2">Calificacion de 2do periodo:</label>
-                <input type="number" name="calificacion2" id="calificacion2" placeholder="Ingrese calificación" min="0" max="10">
+                <input type="number" name="calificacion2" id="calificacion2" placeholder="Ingrese calificación" min="0" max="10" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="calificacion3">Calificacion de 3er periodo: </label>
-                <input type="number" name="calificacion3" id="calificacion3" placeholder="Ingrese calificación" min="0" max="10">
+                <input type="number" name="calificacion3" id="calificacion3" placeholder="Ingrese calificación" min="0" max="10" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="calificacionExamen">Calificacion del examen final:</label>
-                <input type="number" name="calificacionExamen" id="calificacionExamen" placeholder="Ingrese calificación" min="0" max="10">
+                <input type="number" name="calificacionExamen" id="calificacionExamen" placeholder="Ingrese calificación" min="0" max="10" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="calificacionTrabajo">Calificacion del trabajo final: </label>
-                <input type="number" name="calificacionTrabajo" id="calificacionTrabajo" placeholder="Ingrese calificación" min="0" max="10">
+                <input type="number" name="calificacionTrabajo" id="calificacionTrabajo" placeholder="Ingrese calificación" min="0" max="10" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <button onclick="calcularCalificacionFinal()">Calcular calificacion Final</button>
                 <br>

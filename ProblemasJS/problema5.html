@@ -28,10 +28,10 @@
         <main>
             <div class="calculadora">
                 <label for="hombres">Total de hombres: </label>
-                <input type="number" name="hombres" id="hombres" placeholder="ingrese total hombres">
+                <input type="number" name="hombres" id="hombres" placeholder="ingrese total hombres" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <label for="mujeres">Total de mujeres: </label>
-                <input type="number" name="mujeres" id="mujeres" placeholder="ingrese total mujeres">
+                <input type="number" name="mujeres" id="mujeres" placeholder="ingrese total mujeres" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <button onclick="calcularPorcentaje()">Calcular porcentajes</button>
                 <br>

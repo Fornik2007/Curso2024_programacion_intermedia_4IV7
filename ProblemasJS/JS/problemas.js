@@ -1,8 +1,26 @@
+function validacionNumeros(evt){
+    if(window.event){
+        keynum = evt.keyCode;
+    }else{
+        keynum = evt.which;
+    }
+
+    if ((keynum > 47 && keynum < 58) || keynum == 8 || keynum == 13) {
+        return true;
+    } else {
+        alert("Ingrese solamente números")
+    }
+}
 
 //PROBLEMA 1
 
 function calcularInversion(){
     let inversion = parseFloat(document.getElementById('inversion').value);
+
+    //verificaciond e que los datos metidos sean numeros validos y sin recuadros sin llenar
+    if (isNaN(inversion)) {
+        alert("SOLO NUMEROS Y/O LLENA CADA ESPACIO >:(")
+    }
 
     let ganancias = inversion*0.02;
 
@@ -19,6 +37,11 @@ function calcularSueldoFinal(){
     let venta2 = parseFloat(document.getElementById('venta2').value); 
     let venta3 = parseFloat(document.getElementById('venta3').value);
 
+    //verificaciond e que los datos metidos sean numeros validos y sin recuadros sin llenar
+    if (isNaN(sueldoBase) || isNaN(venta1) || isNaN(venta2) || isNaN(venta3)) {
+        alert("SOLO NUMEROS Y/O LLENA CADA ESPACIO >:(")
+    }
+
     let comisiones = (venta1 + venta2 + venta3) * 0.1;
     let totalMensual = sueldoBase + comisiones;
 
@@ -29,6 +52,11 @@ function calcularSueldoFinal(){
 
 function calcularDescuento(){
     let precio = parseFloat(document.getElementById('precio').value);
+
+    //verificaciond e que los datos metidos sean numeros validos y sin recuadros sin llenar
+    if (isNaN(precio)) {
+        alert("SOLO NUMEROS Y/O LLENA CADA ESPACIO >:(")
+    }
 
     let descuento = precio*0.15;
 
@@ -46,6 +74,11 @@ function calcularCalificacionFinal(){
     let calificacionExamen = parseFloat(document.getElementById('calificacionExamen').value);
     let calificacionTrabajo = parseFloat(document.getElementById('calificacionTrabajo').value);
 
+    //verificaciond e que los datos metidos sean numeros validos y sin recuadros sin llenar
+    if (isNaN(calificacion1) || isNaN(calificacion2) || isNaN(calificacion3) || isNaN(calificacionExamen) || isNaN(calificacionTrabajo) ) {
+        alert("SOLO NUMEROS Y/O LLENA CADA ESPACIO >:(")
+    }
+
     let promedio = (calificacion1 + calificacion2 + calificacion3)/ 3;
     let calificacionFinal =(promedio * 0.55) + (calificacionExamen * 0.3) + (calificacionTrabajo * 0.15);
 
@@ -57,6 +90,11 @@ function calcularCalificacionFinal(){
 function calcularPorcentaje(){
     let hombres = parseFloat(document.getElementById('hombres').value);
     let mujeres = parseFloat(document.getElementById('mujeres').value);
+
+    //verificaciond e que los datos metidos sean numeros validos y sin recuadros sin llenar
+    if (isNaN(calificacion1) || isNaN(calificacion2)) {
+        alert("SOLO NUMEROS Y/O LLENA CADA ESPACIO >:(")
+    }
 
     let totalEstudiantes = hombres + mujeres;
     let porcentajeHombres = (hombres / totalEstudiantes) * 100;
@@ -70,6 +108,16 @@ function calcularPorcentaje(){
 function calcularEdad(){
     let fechaNacimiento = new Date(document.getElementById('fechaNacimiento').value);
     let fechaReferencia = new Date(document.getElementById('fechaReferencia').value);
+
+    if (fechaNacimiento instanceof Date || fechaReferencia instanceof Date) {
+    }else{
+        alert("Ingrese una fecha valida")
+    }
+
+    //verificación que las fechas sean validos y sin recuadros sin llenar
+    if (isNaN(fechaNacimiento) || isNaN(fechaReferencia)) {
+        alert("ingrese fechas validas y rellene cada espacio correspondiente.")
+    }
 
     let edad = fechaReferencia.getFullYear() - fechaNacimiento.getFullYear();
 

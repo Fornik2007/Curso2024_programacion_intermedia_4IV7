@@ -28,7 +28,7 @@
         <main>
             <div class="calculadora">
                 <label for="precio">Precio del articulo: $</label>
-                <input type="number" name="precio" id="precio" placeholder="ingrese el precio">
+                <input type="number" name="precio" id="precio" placeholder="ingrese el precio" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <button onclick="calcularDescuento()">Aplicar descuento</button>
                 <br>

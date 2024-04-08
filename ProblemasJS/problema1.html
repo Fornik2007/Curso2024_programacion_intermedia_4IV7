@@ -28,7 +28,7 @@
         <main>
             <div class="calculadora">
                 <label for="inversion">Inversión: $</label>
-                <input type="number" name="inversion" id="inversion" placeholder="ingrese su inversión">
+                <input type="number" name="inversion" id="inversion" placeholder="ingrese su inversión" onkeypress="return validacionNumeros(event)" required>
                 <br>
                 <button onclick="calcularInversion()">Calcular ganancias</button>
                 <br>
