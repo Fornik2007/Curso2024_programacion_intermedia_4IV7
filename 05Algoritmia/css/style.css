@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #0077ff;
+    --colores: #52a0f8;
+}
+
+body{
+    background-image: url(../img/fondo-papel-tapiz-colorido-borroso-artistico_58702-8294.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    align-content: center;
+    height: 180vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+    color: #f0f7ff;
+    font-size: 15px;
+}
+
+.container{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.btn{
+    position: relative;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f0f7ff;
+    letter-spacing: 5px;
+    text-indent: 10px;
+    z-index: 2;
+    text-align: left;
+}
+
+.btn-1{    
+    border: 3px solid;
+    background-color: transparent;
+}
+    
+.btn-1:hover{
+    background-color: #000f2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    color: #0077ff;
+}
+
+.problema-content{
+    margin: 20px;
+}
+
+.problema-content input[type="text"]{
+    margin: 15px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    color: #f0f7ff;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 0 10px var(--colores);
+    border-color: 1px var(--color);
+}
+
+.problema-content input[type="number"]{
+    margin: 15px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    color: #f0f7ff;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px var(--colores);
+    border-color: 1px var(--color);
+}
+
+.volver{
+    margin-top: 50px;
+    text-align: center;
+}
+
+::placeholder{
+    color: #52a0f8;
+}

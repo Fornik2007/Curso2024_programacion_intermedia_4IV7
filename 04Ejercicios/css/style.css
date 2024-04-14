@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color: #0077ff;
+    --colores: #f0f7ff;
+}
+
+body{
+    background-image: url(../img/fondo-papel-tapiz-colorido-borroso-artistico_58702-8294.jpg);
+    background-size: cover;
+    display: block;
+    align-content: center;
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 25px;
+    color: #f0f7ff;
+    font-size: 25px;
+}
+
+.container{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.table{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table input[type="button"]{
+    background: transparent;
+}
+
+.table input[type="text"]{
+    margin: 15px;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    color: #f0f7ff;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 5px var(--colores);
+    border-color: 1px var(--color);
+}
+
+.btn{
+    position: relative;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #f0f7ff;
+    letter-spacing: 5px;
+    text-indent: 10px;
+    z-index: 2;
+    text-align: left;
+}
+
+.btn-1{    
+    border: 3px solid;
+}
+    
+.btn-1:hover{
+    background-color: #000f2b;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    color: #0077ff;
+}
