@@ -1,16 +1,22 @@
 function validacionp1(evt){
-    if(window.event){
-        keynum = evt.keyCode;
-    }else{
-        keynum = evt.which;
+    key = e.keyCode || e.which;
+    tecla = String.fromCharCode(key).toString();
+    letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú";
+
+    especiales = [8,13];
+    tecla_especial = false
+    for(var i in especiales) {
+        if(key == especiales[i]){
+            tecla_especial = true;
+            break;
+        }
     }
 
-    if ((keynum > 64 && keynum < 91 || keynum > 96 && keynum < 166 || keynum == 32 || keynum == 08)) {
-        return true;
-    } else {
-        alert("Ingrese palabras separadas por ESPACIOS únicamente")
+    if(letras.indexOf(tecla) == -1 && !tecla_especial){
+        alert("Ingresar solo letras");
+        return false;
     }
-    
+}    
 
 function problema1(){
     let datosP1 = document.querySelector('#p1-input').value;
@@ -36,11 +42,13 @@ function validacionp2(evt){
         keynum = evt.which;
     }
 
-    if ((keynum > 47 && keynum < 58 || keynum == 32 || keynum == 08)) {
+    if((keynum > 47 && keynum < 58) || keynum == 8 || keynum== 13){
         return true;
-    } else {
-        alert("Ingrese números únicamente")
-    }    
+    }else{
+        alert("Ingresar solo numeros");
+        return false;
+    }
+}    
 
 function problema2(){
     var p2_x1 = document.querySelector('#p2-x1').value;
@@ -80,16 +88,22 @@ function problema2(){
 }
 
 function validacionp3(evt){
-    if(window.event){
-        keynum = evt.keyCode;
-    }else{
-        keynum = evt.which;
+    key = e.keyCode || e.which;
+    tecla = String.fromCharCode(key).toString();
+    letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+
+    especiales = [8,13];
+    tecla_especial = false
+    for(var i in especiales) {
+        if(key == especiales[i]){
+            tecla_especial = true;
+            break;
+        }
     }
 
-    if ((keynum > 64 && keynum < 91)) {
-        return true;
-    } else {
-        alert("Ingrese solamente MAYUSCULAS SIN ESPACIOS, separelos por una COMA")
+    if(letras.indexOf(tecla) == -1 && !tecla_especial){
+        alert("Ingresar solo letras MAYÚSCULAS separadas por una COMA");
+        return false;
     }
 }
 
