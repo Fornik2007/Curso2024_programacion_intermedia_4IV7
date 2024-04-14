@@ -1,3 +1,17 @@
+function validacionp1(evt){
+    if(window.event){
+        keynum = evt.keyCode;
+    }else{
+        keynum = evt.which;
+    }
+
+    if ((keynum > 64 && keynum < 91 || keynum > 96 && keynum < 166 || keynum == 32 || keynum == 08)) {
+        return true;
+    } else {
+        alert("Ingrese palabras separadas por ESPACIOS únicamente")
+    }
+    
+
 function problema1(){
     let datosP1 = document.querySelector('#p1-input').value;
 
@@ -14,6 +28,19 @@ function problema1(){
     document.querySelector('#p1-output').textContent = resultadoP1;
 
 }
+
+function validacionp2(evt){
+    if(window.event){
+        keynum = evt.keyCode;
+    }else{
+        keynum = evt.which;
+    }
+
+    if ((keynum > 47 && keynum < 58 || keynum == 32 || keynum == 08)) {
+        return true;
+    } else {
+        alert("Ingrese números únicamente")
+    }    
 
 function problema2(){
     var p2_x1 = document.querySelector('#p2-x1').value;
