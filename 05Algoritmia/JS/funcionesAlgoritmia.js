@@ -1,22 +1,13 @@
-function validacionp1(evt){
-    key = e.keyCode || e.which;
-    tecla = String.fromCharCode(key).toString();
-    letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚabcdefghijklmnopqrstuvwxyzáéíóú";
-
-    especiales = [8,13];
-    tecla_especial = false
-    for(var i in especiales) {
-        if(key == especiales[i]){
-            tecla_especial = true;
-            break;
-        }
-    }
-
-    if(letras.indexOf(tecla) == -1 && !tecla_especial){
-        alert("Ingresar solo letras");
+function validacionp1(event) {
+    let letra = event.keyCode;
+    if( (letra > 64 && letra < 91 || letra === 192) || (letra > 96 && letra < 124 || letra === 164) || (letra === 8) || (letra === 32) || (letra === 20)){
+        return true;
+    }else{
+        alert("Ingresa solo letras separadas por espacios.");
         return false;
-    }
-}    
+        }
+    
+}   
 
 function problema1(){
     let datosP1 = document.querySelector('#p1-input').value;
@@ -87,25 +78,16 @@ function problema2(){
     document.querySelector('#p2-output').textContent = 'El producto escalar minimo es de: ' + p2_producto;
 }
 
-function validacionp3(evt){
-    key = e.keyCode || e.which;
-    tecla = String.fromCharCode(key).toString();
-    letras = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-
-    especiales = [8,13];
-    tecla_especial = false
-    for(var i in especiales) {
-        if(key == especiales[i]){
-            tecla_especial = true;
-            break;
-        }
-    }
-
-    if(letras.indexOf(tecla) == -1 && !tecla_especial){
-        alert("Ingresar solo letras MAYÚSCULAS separadas por una COMA");
+function validacionp3(event) {
+    let letra = event.keyCode;
+    if( (letra > 64 && letra < 91 || letra === 192) || (letra === 8) || (letra === 44) || (letra === 20)){
+        return true;
+    }else{
+        alert("Ingresa solo letras MAYÚSCULAS, separadas por COMAS.");
         return false;
+        }
+    
     }
-}
 
 function problema3(){
     let abc = ['A', 'B', 'C', 'D', 'E', 'F',
