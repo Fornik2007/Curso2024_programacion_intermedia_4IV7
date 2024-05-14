@@ -69,7 +69,7 @@ function checarSiGano(){
 //si realmente gane debo de mostrarlo en el html
 function mostrarCartelGanador(){
     if(checarSiGano()){
-        alert("A mimir uwu");
+        alert("Has ganado!!!!!!!!!");
     }
     return false;
 }
@@ -184,7 +184,7 @@ function actualizarUltimoMovimiento(direccion){
 
 function mezclarPiezas(veces){
     if(veces <= 0){
-        alert("Asi no se puede");
+        alert("Las piezas han sido mezcladas");
         return;
     }
     var direcciones = [codigosDireccion.ABAJO, codigosDireccion.ARRIBA, codigosDireccion.IZQUIERDA, codigosDireccion.DERECHA];
